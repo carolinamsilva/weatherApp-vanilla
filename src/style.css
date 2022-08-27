@@ -14,7 +14,6 @@ body {
   max-width: 800px;
   margin: 60px auto;
 }
-
 .container {
   max-width: 1140px;
   width: 100%;
@@ -145,7 +144,31 @@ li {
   line-height: 20px;
   list-style: none;
 }
-.weatherForecast {
+.temperature-container {
+  margin-top: 30px;
+}
+.d-flex {
+  display: flex !important;
+}
+canvas {
+  margin: 10px 0;
+}
+.temperature {
+  color: #212121;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+}
+.unit {
+  color: #212121;
+  font-size: 28px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+}
+.weatherForecastPreview {
   text-align: center;
   margin: 40px 0;
   border-bottom: 1px solid #f9f7fe;
@@ -166,6 +189,10 @@ li {
   line-height: 1.5;
   color: #f65282;
   font-weight: 700;
+}
+.forecast-temperature-min {
+  margin-left: 10px;
+  opacity: 0.6;
 }
 footer {
   display: block;

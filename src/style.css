@@ -1,3 +1,130 @@
+body {
+  display: block;
+  background: #f9f7fe;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+form {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.weather {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  padding: 40px;
+  color: #878787;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  position: relative;
+}
+.p-0 {
+  padding: !important;
+}
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+}
+.weatherInfo {
+  margin-top: 20px;
+  display: block;
+  box-sizing: border-box;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
+}
 h1 {
-  color: blueviolet;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.weather h1 {
+  margin: 20px 0 10px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+  color: #272142;
+}
+.weather ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: rgba (39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+}
+.weatherForecast {
+  text-align: center;
+  margin: 40px 0;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 50px;
+}
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.forecast-temperature {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f65282;
+  font-weight: 700;
+}
+footer {
+  display: block;
+  font-size: 14px;
+  margin-top: 40px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
 }

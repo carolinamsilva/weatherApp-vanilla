@@ -10,10 +10,13 @@ body {
   color: #212529;
   text-align: left;
 }
-form {
-  box-sizing: border-box;
+.app {
+  max-width: 800px;
+  margin: 60px auto;
 }
+
 .container {
+  max-width: 1140px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -29,16 +32,43 @@ form {
   padding: 40px;
   color: #878787;
 }
+form {
+  box-sizing: border-box;
+  display: block;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
+.weather li strong {
+  color: #f65282;
+  font-weight: 400;
+}
 .col-9 {
   flex: 0 0 75%;
   max-width: 75%;
   position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.search-input {
+  background: #f9f7fe;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+}
+.form-control {
+  width: 100%;
+  font-weight: 400;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .p-0 {
   padding: !important;
@@ -47,6 +77,23 @@ form {
   flex: 0 0 25%;
   max-width: 25%;
   position: relative;
+  width: 100%;
+}
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background: #885df1;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .weatherInfo {
   margin-top: 20px;
